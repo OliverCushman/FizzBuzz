@@ -1,24 +1,21 @@
-import static java.lang.Math.round;
 public class FizzBuzz {
     public static void main(String[] args) {
         double j;
         double k;
-        int i = 1;
-        while (i < 100) {
-            j = i / 3;
-            k = i / 5;
+        
+        for (int i = 1; i <= 100; i++) {
+            j = (double) i / 3;
+            k = (double) i / 5;
             
-            if (j == round(j) && k == round(k)) {
+            if (j == (int) j && k == (int)k) {
                 System.out.println("FizzBuzz");
-            } else if (j == round(j)) {
+            } else if (j == (int) j) {
                 System.out.println("Fizz");
-            } else if (k == round(k)) {
+            } else if (k == (int) k) {
                 System.out.println("Buzz");
             } else {
                 System.out.println(i);
             }
-            
-            ++i;
         }
     }
 }
