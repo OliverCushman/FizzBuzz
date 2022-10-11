@@ -7,7 +7,7 @@ public class FizzBuzz {
             j = (double) i / 3;
             k = (double) i / 5;
             
-            if (j == (int) j && k == (int)k) {
+            if (j == (int) j && k == (int) k) {
                 System.out.println("FizzBuzz");
             } else if (j == (int) j) {
                 System.out.println("Fizz");
